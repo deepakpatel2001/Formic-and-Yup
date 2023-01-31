@@ -1,13 +1,79 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dimgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainDiv{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mainDiv:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.error{
+  color: red;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.btn{
+  padding: 7px 20px;
+  margin: 15px;
+  background-color: #00ffff;
+  border-radius: 7px;
+  font-size: 18px;
+  transition: all 0.2s ease-in;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+.btn:hover{
+  background-color: #fa6645db;
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.formInfo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.labelName{
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.mainFormData{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label{
+  width: 160px;
+  text-align: justify;
+  margin: 10px;
+}
+
+#inputID{
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
